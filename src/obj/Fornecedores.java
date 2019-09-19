@@ -1,7 +1,6 @@
 package obj;
 
 public class Fornecedores {
-	private int id;
 	private String nome;
 	private String cnpj;
 	private String email;
@@ -10,19 +9,13 @@ public class Fornecedores {
 	
 	
 	
-	public Fornecedores(int id, String nome, String cnpj, String email, String telefone) {
-		this.id = id;
+	public Fornecedores(String nome, String cnpj, String email, String telefone) {
 		this.nome = nome;
 		this.cnpj = cnpj;
 		this.email = email;
 		this.telefone = telefone;
 	}
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
+	
 	public String getNome() {
 		return nome;
 	}
@@ -46,6 +39,10 @@ public class Fornecedores {
 	}
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
+	}
+	@Override
+	public String toString() {
+		return "Fornecedores [nome=" + nome + ", cnpj=" + cnpj + ", email=" + email + ", telefone=" + telefone + "]";
 	}
 	
 	

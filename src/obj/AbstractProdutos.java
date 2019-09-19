@@ -1,29 +1,21 @@
 package obj;
 
 public  class AbstractProdutos {
-	private int idProduto;
 	private String nomeProduto;
+	private String tipoProduto;
 	private double precoProduto;
 	private double pesoProduto;
 	private String medidaPeso;
 	private Fornecedores fornecedor;
 	
-	public AbstractProdutos(int idProduto, String nomeProduto, double precoProduto, double pesoProduto,
-			String medidaPeso, Fornecedores fornecedor) {
-		this.idProduto = idProduto;
+	public AbstractProdutos(String nomeProduto, String tipoProduto, double precoProduto,
+			double pesoProduto, String medidaPeso, Fornecedores fornecedor) {
 		this.nomeProduto = nomeProduto;
+		this.tipoProduto = tipoProduto;
 		this.precoProduto = precoProduto;
 		this.pesoProduto = pesoProduto;
 		this.medidaPeso = medidaPeso;
 		this.fornecedor = fornecedor;
-	}
-
-	public int getIdProduto() {
-		return idProduto;
-	}
-
-	public void setIdProduto(int idProduto) {
-		this.idProduto = idProduto;
 	}
 
 	public String getNomeProduto() {
@@ -66,7 +58,22 @@ public  class AbstractProdutos {
 		this.fornecedor = fornecedor;
 	}
 
-	//gerar construct e get/set
+	public String getTipoProduto() {
+		return tipoProduto;
+	}
+
+	public void setTipoProduto(String tipoProduto) {
+		this.tipoProduto = tipoProduto;
+	}
+
+	@Override
+	public String toString() {
+		return "AbstractProdutos [nomeProduto=" + nomeProduto + ", tipoProduto=" + tipoProduto + ", precoProduto="
+				+ precoProduto + ", pesoProduto=" + pesoProduto + ", medidaPeso=" + medidaPeso + ", fornecedor="
+				+ fornecedor.toString() + "]";
+	}
+
+	
 	
 	
 	
