@@ -1,8 +1,8 @@
 package obj;
 
-public class produtosNaoPereciveis extends abstractProdutos {
+public class ProdutosNaoPereciveis extends AbstractProdutos {
 
-	public produtosNaoPereciveis(int idProduto, String nomeProduto, double precoProduto, double pesoProduto,
+	public ProdutosNaoPereciveis(int idProduto, String nomeProduto, double precoProduto, double pesoProduto,
 			String medidaPeso, Fornecedores fornecedor) {
 		super(idProduto, nomeProduto, precoProduto, pesoProduto, medidaPeso, fornecedor);
 		// TODO Auto-generated constructor stub

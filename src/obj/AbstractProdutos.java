@@ -1,6 +1,6 @@
 package obj;
 
-public  class abstractProdutos {
+public  class AbstractProdutos {
 	private int idProduto;
 	private String nomeProduto;
 	private double precoProduto;
@@ -8,7 +8,7 @@ public  class abstractProdutos {
 	private String medidaPeso;
 	private Fornecedores fornecedor;
 	
-	public abstractProdutos(int idProduto, String nomeProduto, double precoProduto, double pesoProduto,
+	public AbstractProdutos(int idProduto, String nomeProduto, double precoProduto, double pesoProduto,
 			String medidaPeso, Fornecedores fornecedor) {
 		this.idProduto = idProduto;
 		this.nomeProduto = nomeProduto;

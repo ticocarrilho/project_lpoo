@@ -1,6 +1,6 @@
 package testador;
 
-public class opcoesMenu {
+public class OpcoesMenu {
 	public enum opcoesInicio {
 		CRIARFUNCIONARIO,CRIARCLIENTE,LOGARFUNCIONARIO,LOGARCLIENTE
 	}

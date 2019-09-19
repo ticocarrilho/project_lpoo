@@ -1,9 +1,9 @@
 package obj;
 
-public class produtosPereciveis extends abstractProdutos {
+public class ProdutosPereciveis extends AbstractProdutos {
 	private String dataValidade;
 
-	public produtosPereciveis(int idProduto, String nomeProduto, double precoProduto, double pesoProduto,
+	public ProdutosPereciveis(int idProduto, String nomeProduto, double precoProduto, double pesoProduto,
 			String medidaPeso, Fornecedores fornecedor, String dataValidade) {
 		super(idProduto, nomeProduto, precoProduto, pesoProduto, medidaPeso, fornecedor);
 		this.dataValidade = dataValidade;
