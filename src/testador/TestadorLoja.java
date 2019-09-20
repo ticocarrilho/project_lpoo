@@ -2,7 +2,9 @@ package testador;
 
 import java.util.Scanner;
 
+import obj.AbstractProdutos;
 import obj.AlimentosNaoPereciveis;
+import obj.Eletronicos;
 import obj.Estoque;
 import obj.Fornecedores;
 
@@ -10,30 +12,35 @@ public class TestadorLoja {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		TestadorLoja testador;
-		testador = new TestadorLoja();
 		Scanner in = new Scanner(System.in);
-
-		//testador.menuLogin(in);
+		
+		/*TestadorLoja testador;
+		testador = new TestadorLoja();
+		testador.menuLogin(in);*/
+		
 		Estoque estoque = new Estoque();
 		Fornecedores forn = new Fornecedores("NomeFor", "CPNJFor", "EmailFor", "TelefoneFor");
-		AlimentosNaoPereciveis a = new AlimentosNaoPereciveis("Nome1", "Tipo1",
+		AbstractProdutos a = new AlimentosNaoPereciveis("Nome1", "Tipo1",
 				45.0, 45.0, "kg", forn, false);
-		AlimentosNaoPereciveis b = new AlimentosNaoPereciveis("Nome2", "Tipo2",
-				45.0, 45.0, "kg", forn, false);
+		
 		estoque.addEstoque(a);
-		estoque.addEstoque(b);
+		
+		a = new Eletronicos("Nome Eletro", "Tipo Eletro",
+				34.5, 45.3, "teste", forn, 10, 10, 10);
+		
+		estoque.addEstoque(a);
+		
 		estoque.listAllEstoque();
 		
 		in.close();
 
 	}
 	
-	public void menuLogin(Scanner in) {
+	/*public void menuLogin(Scanner in) {
 		int sair = 0;
 		while(sair!=0) {
 			
 		}
 		
-	}
+	}*/
 }

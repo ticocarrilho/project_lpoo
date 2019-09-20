@@ -36,6 +36,12 @@ public class Eletronicos extends AbstractProdutos{
 		tamanho = this.alturaCaixa*this.comprimentoCaixa*this.larguraCaixa;
 		return tamanho;
 	}
+	@Override
+	public String toString() {
+		return super.toString() +  " Eletronicos [alturaCaixa=" + alturaCaixa + ", comprimentoCaixa=" + comprimentoCaixa + ", larguraCaixa="
+				+ larguraCaixa + ", getVolumeCaixa()=" + getVolumeCaixa() + "]";
+	}
+	
 	
 }
 
